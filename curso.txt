@@ -1,0 +1,43 @@
+Curso:
+  Projeto Prático com Laravel 5.6
+
+Requisitos:
+  - Introdução ao Laravel
+  - Básico de PHP
+  - Básico de Composer
+  - Básico de HTML e CSS
+
+Objetivo:
+  - Desenvolver um projeto de Bolão Familiar com Laravel.
+  - Mostrar a modelagem de um sistema de ACL.
+  - Utilização de componentes utilizando Blade.
+  - Criar interfaces com Bootstrap 4.
+  - Sistema de notificações do Laravel.
+
+Descrição do projeto:
+  O sistema vai ter administradores e usuários. Os administradores vão
+  cadastrar bolões, rodadas e partidas. Depois usuários vão poder apostar
+  resultados até o fechamento da rodada. Depois o Administrador vai atualizar
+  os resultados o sistema vai calcular a pontuação dos usuários e definir
+  uma classificação.
+
+Ferramentas:
+  https://laravel.com/docs/5.6
+  https://atom.io/
+  https://code.visualstudio.com/
+  http://php.net/
+  https://getcomposer.org/
+
+Pontuação:
+    A pontuação vai funcionar com um valor definido para o acerto do
+    tipo do resultado (empate, vitória time A ou Time B) e um valor extra se o usuário
+    acertar o placar exato da partida. Para aumentar a chance dos usuários que entrarem
+    depois que o bolão estiver em andamento o valor das pontuações vai aumentando
+    conforme uma taxa definida pelo administrador. Por exemplo: inicia com 10 pontos
+    na primeira roda na segunda rodada aumenta 5 ... daí fica 15 pontos e por aí vai.
+
+
+Curso do Guia Código
+  www.guiacodigo.com
+  www.facebook.com/GuiaCodigo
+  www.twitter.com/GuiaCodigo
