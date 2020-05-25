@@ -3,9 +3,9 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Painel de Controle</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,9 +14,32 @@
                         </div>
                     @endif
 
-                    @foreach ($list as $key => $value)
-                    {{$value -> name}}
-                    @endforeach
+                 
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">E-mail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @foreach ($list as $key => $value)
+                       
+                        
+                        <tr>
+                            <th scope="row"> {{$value -> id}}</th>
+                            <td> {{$value ->name}}</td>
+                            <td> {{$value ->email}}</td>
+                        </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                    
+                    <div class="">
+                    {{$list}}
+                    </div>
 
                 </div>
             </div>
